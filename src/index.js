@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { SwearCountList } from './components/SwearCountList'
+import { FetchHappen } from './components/FetchHappen'
 import registerServiceWorker from './registerServiceWorker';
 
 
-ReactDOM.render(<SwearCountList infractions={
+ReactDOM.render(
+	<FetchHappen />
+	 , document.getElementById('root'));
+
+registerServiceWorker();
+/*<SwearCountList infractions={
 	[
 		{
 			event: "Frustration at exams",
@@ -27,10 +32,7 @@ ReactDOM.render(<SwearCountList infractions={
 		}
 	]
 }
-	 />, document.getElementById('root'));
-
-registerServiceWorker();
-
+*/
 /*/*
 <SwearCount
 	total={1000}
